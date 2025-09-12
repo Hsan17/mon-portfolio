@@ -12,14 +12,15 @@ export const en = {
     switch: "Switch to French",
   },
   
-  // Hero section
+   // Hero section
   hero: {
     greeting: "Hello, I'm",
     name: "Hsan Bellakhel",
-    title: "Data Scientist & ML Engineer",
-    subtitle: "Transforming complex data into actionable insights through advanced analytics and machine learning",
-    cta: "View My Work",
+    title: "Data Scientist, ML & Data Engineer",
+    subtitle: "Designing reliable data pipelines and building machine learning solutions to transform complex data into actionable insights.",
+    cta: "View My Work"
   },
+
   
   // Projects
   projects: {
@@ -31,13 +32,15 @@ export const en = {
   },
   
   // About page
+// About page
   about: {
     title: "About Me",
-    bio: "I'm a passionate data scientist with 8+ years of experience in machine learning, statistical analysis, and data visualization. I specialize in building scalable ML systems and deriving insights from complex datasets to drive business decisions.",
+    bio: "I'm a Data Scientist & ML Engineer focused on building reliable data pipelines, pragmatic machine learning solutions, and turning complex datasets into actionable insights. Strong interest in healthcare and data-driven decision-making.",
     skills: "Skills & Technologies",
     experience: "Experience",
-    education: "Education",
-  },
+    education: "Education"
+},
+
   
   // Contact page
   contact: {
@@ -46,9 +49,10 @@ export const en = {
     email: "Email Me",
     linkedin: "LinkedIn Profile", 
     github: "GitHub Projects",
-    emailAddress: "alex.martin@email.com",
-    linkedinUrl: "linkedin.com/in/alexmartin",
-    githubUrl: "github.com/alexmartin",
+    emailAddress: "belakhelhsan13@gmail.com",
+    linkedinUrl: "www.linkedin.com/in/hsan-bellakhel-91b3b02a2/",
+    githubUrl: "github.com/Hsan17"
+
   },
   
   // Skills
