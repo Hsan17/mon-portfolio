@@ -12,15 +12,15 @@ export const fr = {
     switch: "Basculer vers l'anglais",
   },
   
-  // Hero section  
-  hero: {
-    greeting: "Bonjour, je suis",
-    name: "Hsan Bellakhel",
-    title: "Scientifique des Données & Ingénieur ML",
-    subtitle: "Transformer des données complexes en insights actionnables grâce à l'analyse avancée et l'apprentissage automatique",
-    cta: "Voir Mon Travail",
-  },
-  
+// Hero section  
+hero: {
+  greeting: "Bonjour, je suis",
+  name: "Hsan Bellakhel",
+  title: "Data Scientist, Ingénieur ML & Data Engineer",
+  subtitle: "Concevoir des pipelines de données fiables et développer des solutions d'apprentissage automatique pour transformer des données complexes en insights exploitables.",
+  cta: "Voir Mon Travail"
+},
+
   // Projects
   projects: {
     title: "Projets Sélectionnés", 
@@ -31,13 +31,14 @@ export const fr = {
   },
   
   // About page
-  about: {
-    title: "À Propos",
-    bio: "Je suis une scientifique des données passionnée avec plus de 8 ans d'expérience en apprentissage automatique, analyse statistique et visualisation de données. Je me spécialise dans la construction de systèmes ML évolutifs et l'extraction d'insights de jeux de données complexes pour guider les décisions business.",
-    skills: "Compétences & Technologies",
-    experience: "Expérience",
-    education: "Formation",
-  },
+about: {
+  title: "À Propos",
+  bio: "Je suis Data Scientist & Ingénieur en Machine Learning, spécialisé dans la mise en place de pipelines de données fiables, de solutions d'apprentissage automatique pragmatiques et dans la transformation de données complexes en insights exploitables. Je porte un intérêt particulier à la santé et à la prise de décision basée sur les données.",
+  skills: "Compétences & Technologies",
+  experience: "Expérience",
+  education: "Formation"
+},
+
   
   // Contact page
   contact: {
@@ -46,9 +47,9 @@ export const fr = {
     email: "M'Écrire",
     linkedin: "Profil LinkedIn",
     github: "Projets GitHub", 
-    emailAddress: "alex.martin@email.com",
-    linkedinUrl: "linkedin.com/in/alexmartin",
-    githubUrl: "github.com/alexmartin",
+    emailAddress: "belakhelhsan13@gmail.com",
+    linkedinUrl: "www.linkedin.com/in/hsan-bellakhel-91b3b02a2/",
+    githubUrl: "github.com/Hsan17"
   },
   
   // Skills

@@ -34,7 +34,8 @@ export default function Contact() {
     <div className="min-h-screen py-12">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 max-w-4xl">
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold mb-4 bg-gradient-primary bg-clip-text text-transparent">
+          {/* ===== Titre en blanc ===== */}
+          <h1 className="text-4xl font-bold mb-4 text-white">
             {t.contact.title}
           </h1>
           <p className="text-lg text-muted-foreground">
@@ -46,7 +47,10 @@ export default function Contact() {
           {contactMethods.map((method) => {
             const Icon = method.icon;
             return (
-              <Card key={method.title} className="bg-card text-card-foreground shadow-paper hover:shadow-elegant transition-smooth group">
+              <Card
+                key={method.title}
+                className="bg-card text-card-foreground shadow-paper hover:shadow-elegant transition-smooth group"
+              >
                 <CardHeader className="text-center">
                   <div className="mx-auto mb-4 p-3 bg-gradient-primary rounded-full w-fit">
                     <Icon className="h-6 w-6 text-primary-foreground" />
@@ -60,11 +64,11 @@ export default function Contact() {
                   <p className="text-sm font-mono text-muted-foreground mb-4 break-all">
                     {method.value}
                   </p>
-                  <Button 
-                    asChild 
+                  <Button
+                    asChild
                     className="w-full gap-2 group-hover:shadow-elegant transition-smooth"
                   >
-                    <a 
+                    <a
                       href={method.href}
                       target={method.href.startsWith('mailto:') ? '_self' : '_blank'}
                       rel={method.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
@@ -82,13 +86,11 @@ export default function Contact() {
         {/* Additional contact info */}
         <div className="mt-12 text-center">
           <div className="bg-card text-card-foreground rounded-2xl p-8 shadow-paper">
-            <h3 className="text-xl font-semibold mb-4">
-              Open to Opportunities
-            </h3>
+            <h3 className="text-xl font-semibold mb-4">Open to Opportunities</h3>
             <p className="text-muted-foreground leading-relaxed">
-              I'm always interested in discussing new data science projects, research collaborations, 
-              and consulting opportunities. Whether you're looking to solve complex analytical challenges 
-              or need guidance on machine learning implementations, I'd love to hear from you.
+              I'm always open to discussing new data science and data engineering projects, research collaborations, 
+              and consulting opportunities. Whether you're aiming to solve complex analytical challenges, optimize 
+              data pipelines, or implement machine learning solutions, I'd be glad to connect and contribute to your initiatives.
             </p>
           </div>
         </div>

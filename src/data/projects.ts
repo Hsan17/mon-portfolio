@@ -57,7 +57,7 @@ export const projects: Project[] = [
         },
       },
     ],
-    repoUrl: "https://github.com/Hsan17/portfolio",
+    repoUrl: "https://github.com/Hsan17/mon-portfolio",
   },
 
   // 1) R/Shiny – NSC Tunisia (already included)
