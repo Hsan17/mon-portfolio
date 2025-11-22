@@ -208,6 +208,112 @@ export const projects: Project[] = [
     ],
     repoUrl: "https://github.com/Hsan17/book-recommender-streamlit",
   },
+  
+
+   {
+    id: "4",
+    slug: "intelligent-pfe-tracker",
+    title: {
+      en: "Intelligent & Automated Recruitment Assistant (PFE Tracker)",
+      fr: "Assistant de Recrutement Intelligent & Automatisé (PFE Tracker)",
+    },
+    summary: {
+      en: "Smart pipeline for internship applications—automated email parsing, AI analysis, and centralized tracking with real-time notifications.",
+      fr: "Pipeline intelligent pour candidatures de stage : parsing d’emails automatisé, analyse IA, suivi centralisé et notifications en temps réel.",
+    },
+    overview: {
+      en: `Designed and deployed a hybrid automation system for internship (PFE) applications. Incoming emails are parsed semantically by a custom AI (FastAPI + spaCy), classified (Interview, Refusal, Pending), and tracked in real time via Google Sheets. Selective alerts notify via Slack only when an opportunity is detected.
+Hybrid architecture with n8n orchestration, RESTful backend (FastAPI), NER and sentiment analysis, bilingual support, and robust error handling.`,
+      fr: `Conception et déploiement d’un système d’automatisation hybride pour le suivi des candidatures de stage (PFE). Les emails entrants sont analysés sémantiquement par une IA personnalisée (FastAPI + spaCy), classés (Entretien, Refus, Attente) et centralisés en temps réel sur Google Sheets. Les notifications ciblées sont envoyées sur Slack uniquement si une opportunité d’entretien est détectée.
+Architecture hybride avec orchestration n8n, backend RESTful (FastAPI), extraction NER et analyse de sentiment, support bilingue et gestion robuste des erreurs.`,
+    },
+    tags: ["Automation", "AI", "NLP", "ETL", "FastAPI", "spaCy", "n8n", "Slack", "Google Sheets"],
+    stack: ["FastAPI", "spaCy", "Python", "n8n", "IMAP", "Google Sheets API", "Slack API", "ngrok"],
+    coverImage: "/images/pfe-tracker/cover.jpg", // choisis le visuel général
+    gallery: [
+      {
+        src: "/images/pfe-tracker/n8n-workflow.jpg",
+        caption: {
+          en: "n8n workflow orchestrating emails, HTTP/NLP, Google Sheets, and Slack notifications.",
+          fr: "Workflow n8n orchestrant emails, HTTP/NLP, Google Sheets et notifications Slack.",
+        },
+      },
+      {
+        src: "/images/pfe-tracker/sheets-tracker.jpg",
+        caption: {
+          en: "Real-time candidate tracking in Google Sheets with status and AI summaries.",
+          fr: "Suivi des candidatures en temps réel sur Google Sheets avec statuts et résumés IA.",
+        },
+      },
+      {
+        src: "/images/pfe-tracker/slack-alert.jpg",
+        caption: {
+          en: "Automated Slack alert: only interview opportunities are notified to mobile.",
+          fr: "Alerte Slack automatisée : uniquement les opportunités d’entretien sont notifiées sur mobile.",
+        },
+      },
+      {
+        src: "/images/pfe-tracker/api-backend.jpg",
+        caption: {
+          en: "FastAPI backend integrating spaCy models (NER), bilingual NLP, and robust parsing.",
+          fr: "Backend FastAPI intégrant spaCy (NER), NLP bilingue et parsing robuste.",
+        },
+      },
+    ],
+    repoUrl: "https://github.com/Hsan17/pfe-automation-api-hsan/tree/main", // Ajoute le lien GitHub ou Notion si tu veux partager
+  },
+
+  
+  {
+  id: "5",
+  slug: "clinical-trials-pipeline",
+  title: {
+    en: "End-to-End Clinical Trials Data Pipeline",
+    fr: "Pipeline de Données Essay Clinique — ETL Complet",
+  },
+  summary: {
+    en: "Automated ETL pipeline for global clinical trials: data extraction, curation, cloud warehousing and dynamic BI dashboards.",
+    fr: "Pipeline ETL automatisé pour essais cliniques mondiaux : extraction, nettoyage, data warehouse cloud et dashboards BI.",
+  },
+  overview: {
+    en: `Designed a full data engineering pipeline to extract, transform, and analyze clinical trial data from ClinicalTrials.gov. The workflow automates ingestion via Python scripts, cleans and standardizes datasets, loads them to a scalable Snowflake data warehouse, and delivers actionable insights through interactive Power BI dashboards. Architecture combines modular Python (Pandas, Requests), Dockerized orchestration with Airflow, and seamless analytics from raw to curated layers.`,
+    fr: `Conception d’un pipeline data engineering complet pour extraire, transformer et analyser les données d’essais cliniques mondiaux (ClinicalTrials.gov). Le flux automatise l’ingestion par scripts Python, le nettoyage et la standardisation des données, le chargement vers un data warehouse Snowflake évolutif, puis la restitution d’indicateurs stratégiques via des dashboards Power BI interactifs. L’architecture combine Python modulaire (Pandas, Requests), orchestration Docker/Airflow et analytics fluide de la donnée brute à la couche curée.`,
+  },
+  tags: ["ETL", "Data Engineering", "Python", "Airflow", "Docker", "Snowflake", "Power BI", "Cloud", "Healthcare"],
+  stack: ["Python", "Pandas", "Requests", "PyArrow", "Docker", "Docker Compose", "Apache Airflow", "Snowflake", "Power BI"],
+  coverImage: "/images/clinical-trials/cover.jpg",
+  gallery: [
+    {
+      src: "/images/clinical-trials/etl-code.jpg",
+      caption: {
+        en: "ETL code for clinical trials loading, transformation and Snowflake integration",
+        fr: "Code ETL pour chargement, transformation et intégration Snowflake des essais cliniques",
+      },
+    },
+    {
+      src: "/images/clinical-trials/airflow-dag.jpg",
+      caption: {
+        en: "Airflow DAG orchestrating daily clinical trial ETL",
+        fr: "DAG Airflow orchestrant l’ETL quotidien des essais cliniques",
+      },
+    },
+    {
+      src: "/images/clinical-trials/snowflake-db.jpg",
+      caption: {
+        en: "Snowflake warehouse: creation scripts and clinical trial stats",
+        fr: "Warehouse Snowflake : scripts de création et statistiques essais",
+      },
+    },
+    {
+      src: "/images/clinical-trials/powerbi-dashboard.jpg",
+      caption: {
+        en: "Power BI dashboard: Sponsors, trial phases and global distribution",
+        fr: "Tableau de bord Power BI : sponsors, phases d’études et carte mondiale",
+      },
+    },
+  ],
+  repoUrl: "https://github.com/Hsan17/clinical-trials-pipeline"
+}
 
   
 ];
