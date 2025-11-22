@@ -49,7 +49,7 @@ export const en = {
     email: "Email Me",
     linkedin: "LinkedIn Profile", 
     github: "GitHub Projects",
-    emailAddress: "belakhelhsan13@gmail.com",
+    emailAddress: "hsanbellakhel@gmail.com",
     linkedinUrl: "www.linkedin.com/in/hsan-bellakhel-91b3b02a2/",
     githubUrl: "github.com/Hsan17"
 

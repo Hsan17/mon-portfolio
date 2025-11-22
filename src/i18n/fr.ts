@@ -47,7 +47,7 @@ about: {
     email: "M'Écrire",
     linkedin: "Profil LinkedIn",
     github: "Projets GitHub", 
-    emailAddress: "belakhelhsan13@gmail.com",
+    emailAddress: "hsanbellakhel@gmail.com",
     linkedinUrl: "www.linkedin.com/in/hsan-bellakhel-91b3b02a2/",
     githubUrl: "github.com/Hsan17"
   },

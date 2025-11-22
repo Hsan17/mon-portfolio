@@ -5,13 +5,13 @@ export type Project = {
   id: string;
   slug: string;
   title: L;
-  summary: L;     // shown on card
-  overview: L;    // shown at top of modal
+  summary: L; // shown on card
+  overview: L; // shown at top of modal
   tags: string[];
   stack: string[];
   coverImage: string;
-  gallery: GalleryItem[];   // images with captions
-  repoUrl: string;          // opens new tab
+  gallery: GalleryItem[]; // images with captions
+  repoUrl: string; // opens new tab
 };
 
 export const projects: Project[] = [
@@ -31,8 +31,24 @@ export const projects: Project[] = [
       en: "This website showcases my work with a clean UI and fast UX. It features a projects gallery with image modals, a bilingual interface (EN/FR), reusable UI components, and a data-driven projects file for easy future updates.",
       fr: "Ce site présente mes réalisations avec une interface soignée et performante. Il inclut une galerie de projets avec modales d’images, une interface bilingue (EN/FR), des composants UI réutilisables et un fichier de données pilotant les projets pour simplifier les mises à jour futures.",
     },
-    tags: ["React", "TypeScript", "Tailwind", "shadcn/ui", "Vite", "Routing", "i18n"],
-    stack: ["React", "TypeScript", "Vite", "Tailwind CSS", "shadcn/ui", "react-router", "lucide-react"],
+    tags: [
+      "React",
+      "TypeScript",
+      "Tailwind",
+      "shadcn/ui",
+      "Vite",
+      "Routing",
+      "i18n",
+    ],
+    stack: [
+      "React",
+      "TypeScript",
+      "Vite",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "react-router",
+      "lucide-react",
+    ],
     coverImage: "/images/sentiment-analysis/cover.jpg",
     gallery: [
       {
@@ -129,7 +145,13 @@ export const projects: Project[] = [
       fr: "Ingénierie et enrichissement d’un jeu de données pharmacogénomiques : 1 339 médicaments avec 18 attributs/entrée (gènes, variants, recommandations cliniques) intégrés depuis PharmGKB et PubChem. Chatbot médical RAG (LLM + retrieval) offrant des réponses contextuelles sur médicaments, interactions et génétique. Stack : APIs Django REST Framework, front-end React/TypeScript, Tailwind CSS, shadcn/ui.",
     },
     tags: ["Pharmacogenomics", "RAG", "LLM", "Django", "React"],
-    stack: ["Django REST Framework", "React", "TypeScript", "Tailwind CSS", "shadcn/ui"],
+    stack: [
+      "Django REST Framework",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+    ],
     coverImage: "/images/fraud-detection/cover.jpg",
     gallery: [
       {
@@ -180,8 +202,20 @@ export const projects: Project[] = [
       en: "Developed a Book Recommender System using Streamlit, pandas, and scikit-learn. The app takes a book title as input, vectorizes descriptions using TF-IDF, and calculates cosine similarity to recommend books with similar content. Books are displayed with descriptions and cover images from the Google Books API.",
       fr: "Système de recommandation de livres développé avec Streamlit, pandas et scikit-learn. L’application prend un titre de livre en entrée, vectorise les descriptions avec TF-IDF et calcule la similarité cosinus pour recommander des livres similaires. Les livres sont affichés avec descriptions et images de couverture via l'API Google Books.",
     },
-    tags: ["Streamlit", "NLP", "Book Recommendation", "TF-IDF", "Cosine Similarity"],
-    stack: ["Streamlit", "pandas", "scikit-learn", "Requests", "Google Books API"],
+    tags: [
+      "Streamlit",
+      "NLP",
+      "Book Recommendation",
+      "TF-IDF",
+      "Cosine Similarity",
+    ],
+    stack: [
+      "Streamlit",
+      "pandas",
+      "scikit-learn",
+      "Requests",
+      "Google Books API",
+    ],
     coverImage: "/images/book-recommender-system/cover.jpg",
     gallery: [
       {
@@ -208,9 +242,8 @@ export const projects: Project[] = [
     ],
     repoUrl: "https://github.com/Hsan17/book-recommender-streamlit",
   },
-  
 
-   {
+  {
     id: "4",
     slug: "intelligent-pfe-tracker",
     title: {
@@ -227,8 +260,27 @@ Hybrid architecture with n8n orchestration, RESTful backend (FastAPI), NER and s
       fr: `Conception et déploiement d’un système d’automatisation hybride pour le suivi des candidatures de stage (PFE). Les emails entrants sont analysés sémantiquement par une IA personnalisée (FastAPI + spaCy), classés (Entretien, Refus, Attente) et centralisés en temps réel sur Google Sheets. Les notifications ciblées sont envoyées sur Slack uniquement si une opportunité d’entretien est détectée.
 Architecture hybride avec orchestration n8n, backend RESTful (FastAPI), extraction NER et analyse de sentiment, support bilingue et gestion robuste des erreurs.`,
     },
-    tags: ["Automation", "AI", "NLP", "ETL", "FastAPI", "spaCy", "n8n", "Slack", "Google Sheets"],
-    stack: ["FastAPI", "spaCy", "Python", "n8n", "IMAP", "Google Sheets API", "Slack API", "ngrok"],
+    tags: [
+      "Automation",
+      "AI",
+      "NLP",
+      "ETL",
+      "FastAPI",
+      "spaCy",
+      "n8n",
+      "Slack",
+      "Google Sheets",
+    ],
+    stack: [
+      "FastAPI",
+      "spaCy",
+      "Python",
+      "n8n",
+      "IMAP",
+      "Google Sheets API",
+      "Slack API",
+      "ngrok",
+    ],
     coverImage: "/images/pfe-tracker/cover.jpg", // choisis le visuel général
     gallery: [
       {
@@ -263,57 +315,133 @@ Architecture hybride avec orchestration n8n, backend RESTful (FastAPI), extracti
     repoUrl: "https://github.com/Hsan17/pfe-automation-api-hsan/tree/main", // Ajoute le lien GitHub ou Notion si tu veux partager
   },
 
-  
   {
-  id: "5",
-  slug: "clinical-trials-pipeline",
+    id: "5",
+    slug: "clinical-trials-pipeline",
+    title: {
+      en: "End-to-End Clinical Trials Data Pipeline",
+      fr: "Pipeline de Données Essay Clinique — ETL Complet",
+    },
+    summary: {
+      en: "Automated ETL pipeline for global clinical trials: data extraction, curation, cloud warehousing and dynamic BI dashboards.",
+      fr: "Pipeline ETL automatisé pour essais cliniques mondiaux : extraction, nettoyage, data warehouse cloud et dashboards BI.",
+    },
+    overview: {
+      en: `Designed a full data engineering pipeline to extract, transform, and analyze clinical trial data from ClinicalTrials.gov. The workflow automates ingestion via Python scripts, cleans and standardizes datasets, loads them to a scalable Snowflake data warehouse, and delivers actionable insights through interactive Power BI dashboards. Architecture combines modular Python (Pandas, Requests), Dockerized orchestration with Airflow, and seamless analytics from raw to curated layers.`,
+      fr: `Conception d’un pipeline data engineering complet pour extraire, transformer et analyser les données d’essais cliniques mondiaux (ClinicalTrials.gov). Le flux automatise l’ingestion par scripts Python, le nettoyage et la standardisation des données, le chargement vers un data warehouse Snowflake évolutif, puis la restitution d’indicateurs stratégiques via des dashboards Power BI interactifs. L’architecture combine Python modulaire (Pandas, Requests), orchestration Docker/Airflow et analytics fluide de la donnée brute à la couche curée.`,
+    },
+    tags: [
+      "ETL",
+      "Data Engineering",
+      "Python",
+      "Airflow",
+      "Docker",
+      "Snowflake",
+      "Power BI",
+      "Cloud",
+      "Healthcare",
+    ],
+    stack: [
+      "Python",
+      "Pandas",
+      "Requests",
+      "PyArrow",
+      "Docker",
+      "Docker Compose",
+      "Apache Airflow",
+      "Snowflake",
+      "Power BI",
+    ],
+    coverImage: "/images/clinical-trials/cover.jpg",
+    gallery: [
+      {
+        src: "/images/clinical-trials/etl-code.jpg",
+        caption: {
+          en: "ETL code for clinical trials loading, transformation and Snowflake integration",
+          fr: "Code ETL pour chargement, transformation et intégration Snowflake des essais cliniques",
+        },
+      },
+      {
+        src: "/images/clinical-trials/airflow-dag.jpg",
+        caption: {
+          en: "Airflow DAG orchestrating daily clinical trial ETL",
+          fr: "DAG Airflow orchestrant l’ETL quotidien des essais cliniques",
+        },
+      },
+      {
+        src: "/images/clinical-trials/snowflake-db.jpg",
+        caption: {
+          en: "Snowflake warehouse: creation scripts and clinical trial stats",
+          fr: "Warehouse Snowflake : scripts de création et statistiques essais",
+        },
+      },
+      {
+        src: "/images/clinical-trials/powerbi-dashboard.jpg",
+        caption: {
+          en: "Power BI dashboard: Sponsors, trial phases and global distribution",
+          fr: "Tableau de bord Power BI : sponsors, phases d’études et carte mondiale",
+        },
+      },
+    ],
+    repoUrl: "https://github.com/Hsan17/clinical-trials-pipeline",
+  },
+
+{
+  id: "6",
+  slug: "energy-forecasting",
   title: {
-    en: "End-to-End Clinical Trials Data Pipeline",
-    fr: "Pipeline de Données Essay Clinique — ETL Complet",
+    en: "Energy Consumption Forecasting Dashboard",
+    fr: "Dashboard de Prévision Énergétique",
   },
   summary: {
-    en: "Automated ETL pipeline for global clinical trials: data extraction, curation, cloud warehousing and dynamic BI dashboards.",
-    fr: "Pipeline ETL automatisé pour essais cliniques mondiaux : extraction, nettoyage, data warehouse cloud et dashboards BI.",
+    en: "Time series forecasting app using ARIMA, Prophet & LSTM to predict electricity consumption and compare models.",
+    fr: "App de prévision de séries temporelles (ARIMA, Prophet, LSTM) pour prédire et comparer la consommation électrique.",
   },
   overview: {
-    en: `Designed a full data engineering pipeline to extract, transform, and analyze clinical trial data from ClinicalTrials.gov. The workflow automates ingestion via Python scripts, cleans and standardizes datasets, loads them to a scalable Snowflake data warehouse, and delivers actionable insights through interactive Power BI dashboards. Architecture combines modular Python (Pandas, Requests), Dockerized orchestration with Airflow, and seamless analytics from raw to curated layers.`,
-    fr: `Conception d’un pipeline data engineering complet pour extraire, transformer et analyser les données d’essais cliniques mondiaux (ClinicalTrials.gov). Le flux automatise l’ingestion par scripts Python, le nettoyage et la standardisation des données, le chargement vers un data warehouse Snowflake évolutif, puis la restitution d’indicateurs stratégiques via des dashboards Power BI interactifs. L’architecture combine Python modulaire (Pandas, Requests), orchestration Docker/Airflow et analytics fluide de la donnée brute à la couche curée.`,
+    en: "Developed a full Python & Streamlit application to forecast US East PJM electricity consumption (2002-2018). Compared ARIMA, Prophet, and LSTM models, evaluated performance (RMSE), and built an interactive dashboard for model selection. The notebook pipeline covers EDA, modeling, and result visualization for robust energy analytics.",
+    fr: "Développement d’une application Streamlit et Python pour prédire la consommation d’électricité PJM (US Est, 2002–2018). Comparaison des modèles ARIMA, Prophet, LSTM, évaluation de la performance (RMSE) et dashboard interactif pour la sélection des modèles et l’analyse visuelle. Le pipeline notebook couvre l’EDA, la modélisation et la visualisation des résultats.",
   },
-  tags: ["ETL", "Data Engineering", "Python", "Airflow", "Docker", "Snowflake", "Power BI", "Cloud", "Healthcare"],
-  stack: ["Python", "Pandas", "Requests", "PyArrow", "Docker", "Docker Compose", "Apache Airflow", "Snowflake", "Power BI"],
-  coverImage: "/images/clinical-trials/cover.jpg",
+  tags: [
+    "Time Series",
+    "ARIMA",
+    "Prophet",
+    "LSTM",
+    "Streamlit",
+    "Python"
+  ],
+  stack: [
+    "Python",
+    "Streamlit",
+    "pandas",
+    "scikit-learn",
+    "TensorFlow"
+  ],
+  coverImage: "/images/energy-forecasting/cover.jpg",
   gallery: [
     {
-      src: "/images/clinical-trials/etl-code.jpg",
+      src: "/images/energy-forecasting/gallery-1.jpg",
       caption: {
-        en: "ETL code for clinical trials loading, transformation and Snowflake integration",
-        fr: "Code ETL pour chargement, transformation et intégration Snowflake des essais cliniques",
+        en: "Time series plot showing historical electricity consumption",
+        fr: "Graphique de série temporelle montrant la consommation électrique historique",
       },
     },
     {
-      src: "/images/clinical-trials/airflow-dag.jpg",
+      src: "/images/energy-forecasting/gallery-2.jpg",
       caption: {
-        en: "Airflow DAG orchestrating daily clinical trial ETL",
-        fr: "DAG Airflow orchestrant l’ETL quotidien des essais cliniques",
+        en: "Model comparison between ARIMA, Prophet and LSTM",
+        fr: "Comparaison des modèles ARIMA, Prophet et LSTM",
       },
     },
     {
-      src: "/images/clinical-trials/snowflake-db.jpg",
+      src: "/images/energy-forecasting/gallery-3.jpg",
       caption: {
-        en: "Snowflake warehouse: creation scripts and clinical trial stats",
-        fr: "Warehouse Snowflake : scripts de création et statistiques essais",
-      },
-    },
-    {
-      src: "/images/clinical-trials/powerbi-dashboard.jpg",
-      caption: {
-        en: "Power BI dashboard: Sponsors, trial phases and global distribution",
-        fr: "Tableau de bord Power BI : sponsors, phases d’études et carte mondiale",
+        en: "Interactive Streamlit dashboard for model forecasting",
+        fr: "Dashboard Streamlit interactif pour la prévision",
       },
     },
   ],
-  repoUrl: "https://github.com/Hsan17/clinical-trials-pipeline"
-}
+  repoUrl: "https://github.com/Hsan17/energy-forecasting",
+},
 
-  
-];
+
+]
